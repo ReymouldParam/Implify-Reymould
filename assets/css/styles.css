@@ -388,3 +388,87 @@
 .case-card:hover .card-inner{
   transform: translateY(0);
 }
+
+/* ******************** */
+/* About us page styles */
+/* ******************** */
+
+.banner{
+  height: calc(100vh - var(--header-height));
+  padding: 30px;
+}
+
+.about-banner .inner-container{
+  background-image: url(../images/about-banner.webp);
+}
+
+.banner .inner-container{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: var(--std-padding);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.about-banner .inner-container::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 17, 62, 0.433);
+}
+
+.banner .inner-container *{
+  position: relative;
+  z-index: 2;
+}
+
+.banner .inner-container .content{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.5s ease-out;
+}
+
+.about-banner .inner-container .content{
+  background-color: #082E956B;
+  backdrop-filter: blur(5px);
+  width: 0;
+}
+
+.banner .inner-container .content .title{
+  font-size: 7rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  
+}
+.about-banner .inner-container .content .title{
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.5s 0.4s ease-out;
+}
+
+.banner .inner-container .content .text{
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 400;
+  width: 75%;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.5s 0.4s ease-out;
+}
+
+.about-banner .inner-container .content .text{
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.5s 0.4s ease-out;
+}

@@ -2,3 +2,7 @@
     transform: translateX(0) translateY(0) translateZ(0) !important;
     opacity: 1 !important;
 }
+
+.defaultWidth{
+    width: 100% !important;
+}
