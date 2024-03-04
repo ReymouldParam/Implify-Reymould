@@ -25,6 +25,10 @@
     background-repeat: no-repeat;
 }
 
+.clockwise-90 {
+    transform: rotate(90deg) !important;
+}
+
 .center-item{
     display: flex;
     justify-content: center;
