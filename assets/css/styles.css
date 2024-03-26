@@ -1,15 +1,16 @@
 .home-banner{
-    height: calc(100vh - var(--header-height));
+    /* height: calc(100vh - var(--header-height)); */
+    height: 100vh;
     width: 100%;
-    padding-top: var(--std-padding);
-    padding-bottom: var(--std-padding);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .home-banner .banner-inner{
     background-image: url(../images/banner-bg.webp);
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 30px;
     position: relative;
     overflow: hidden;
 }
@@ -28,10 +29,11 @@
 }
 .home-banner .banner-inner .bg-white-container{
     width: 80%;
-    height: 90%;
+    height: 80%;
+    margin-bottom: 20px;
     background-color: #FFFFFF33;
     border-radius: 50px;
-    padding: var(--std-padding);
+    padding: 20px;
 }
 .home-banner .banner-inner .bg-white-container .center{
     width: fit-content;
@@ -40,7 +42,8 @@
 }
 .home-banner .banner-inner .bg-white-container .center > .abs-text{
     position: absolute;
-    width: 400px;
+    font-size: 15px;
+    width: 300px;
     top: 15px;
     left: 120%;
     transform: translateX(300px);
@@ -389,12 +392,112 @@
   transform: translateY(0);
 }
 
+.home-career{
+  position: relative;
+  height: 90vh;
+  background-image: url(../images/home-career-bg.webp);
+}
+
+.home-career::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.724);
+  /* backdrop-filter: blur(10px); */
+}
+.home-career *{
+  position: relative;
+  z-index: 2;
+}
+
+.career-img-container .img-container{
+  width: 33.33%;
+  height: 100%;
+}
+.career-img-container .img-container:nth-child(1){
+  background-image: url(../images/case-study/career1\ \(3\).webp);
+  transform: translateX(100%);
+  transition: all 0.3s 0.4s ease-out;
+}
+.career-img-container .img-container:nth-child(2){
+  background-image: url(../images/case-study/career1\ \(1\).webp);
+  transform: translateX(100%);
+  transition: all 0.3s 0.2s ease-out;
+}
+.career-img-container .img-container:nth-child(3){
+  background-image: url(../images/case-study/career1\ \(2\).webp);
+  transform: translateX(100%);
+  transition: all 0.3s ease-out;
+}
+
+/* Our clients */
+.home-client{
+  position: relative;
+  background-image: url(../images/home-clients-bg.webp);
+}
+.home-client::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.724);
+  backdrop-filter: blur(2px);
+}
+
+.home-client *{
+  position: relative;
+  z-index: 2;
+}
+
+.client-item{
+  height: 15vw;
+  width: 15vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.client-item .rotating-bg{
+  height: 500px;
+  width: 150px;
+  background-color: white;
+  background: linear-gradient(to right,#082E95 , #082e952e);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spinner 3s linear infinite;
+  z-index: -1;
+}
+
+.client-item::after{
+  content: '';
+  position: absolute;
+  background-color: black;
+  inset: 5px;
+}
+
+@keyframes spinner {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
+
 /* ******************** */
 /* About us page styles */
 /* ******************** */
 
 .banner{
-  height: calc(100vh - var(--header-height));
+  height: calc(100vh );
   padding: 30px;
 }
 
