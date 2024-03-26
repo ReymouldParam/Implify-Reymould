@@ -606,3 +606,102 @@
   border-radius: 20px;
   min-height: 20vh;
 }
+
+/* ******************* */
+/* Service page styles */
+/* ******************* */
+
+.service-banner{
+    height: 100vh;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.service-banner-inner{
+  background-image: url(../images/services/service-page-bg.webp);
+  background-position: top;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--std-radius);
+  overflow: hidden;
+  position: relative;
+}
+.service-banner-inner::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0px);
+}
+.service-banner-inner *{
+  position: relative;
+  z-index: 2;
+}
+
+.service-container{
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-container .content{
+  width: 45%;
+}
+
+.service-container .content .arrow-btn{
+  background-color: var(--theme-color-blue);
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  rotate: 45deg;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.service-container .img-container{
+  width: 50%;
+  
+}
+
+.service-container .img-container .img{
+  width: 100%;
+  height: 100%;
+  border-radius: var(--std-radius);
+  position: relative;
+  z-index: 3;
+}
+
+/* ********************** */
+/* app devlopment styles  */
+/* ********************** */
+
+.development-banner{
+  margin-top: calc(var(--header-height) + 40px);
+}
+
+.blue-bg-box-1{
+  position: absolute;
+  width: 300px;
+  height: 10000px;
+  background-color: var(--theme-color-blue);
+  border-radius: var(--std-radius);
+  bottom: 60px;
+  right: -20px;
+}
+
+.blue-bg-box-2{
+  position: absolute;
+  width: 1000px;
+  height: 300px;
+  background-color: var(--theme-color-blue);
+  border-radius: var(--std-radius);
+  top: -20px;
+  right: 50%;
+}

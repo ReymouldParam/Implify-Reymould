@@ -12,6 +12,11 @@
     --theme-color-blue : #082E95;
     --header-height : 60px;
     --std-padding: 50px;
+    --std-radius: 30px;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .padding-x{
@@ -74,6 +79,10 @@
 }
 .text-light{
     letter-spacing: 1px;
+}
+
+.text-xxl{
+    font-size: 70px;
 }
 
 .inria-font{
