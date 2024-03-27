@@ -30,6 +30,14 @@ body{
     background-repeat: no-repeat;
 }
 
+.bg-theme-blue{
+    background-color: var(--theme-color-blue);
+}
+
+.std-radius{
+    border-radius: var(--std-radius);
+}
+
 .clockwise-90 {
     transform: rotate(90deg) !important;
 }
@@ -96,6 +104,10 @@ body{
     row-gap: 10px;
 }
 
+/* Bootstrap styles over ridden */
+.fw-bold{
+    font-weight: 600 !important;
+}
 
 /* Header styles */
 

@@ -1,0 +1,195 @@
+.lifescience-banner{
+    padding: 20px;
+    height: 100vh;
+}
+
+.lifescience-banner-inner{
+    border-radius: var(--std-radius);
+    background-image: url(../images/lifescience/banner.webp);
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.lifescience-banner-inner::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0px);
+  }
+  .lifescience-banner-inner *{
+    position: relative;
+    z-index:2;
+  }
+
+.lifescience-main-container .visible-container{
+    border-radius: var(--std-radius);
+    border: 1px solid var(--theme-color-blue);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.lifescience-main-container .visible-container .title-blue-md{
+    width: 500px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.lifescience-main-container .visible-container .icon{
+    height: 100px;
+}
+
+.white-line-sm{
+    width: 70px;
+    height: 1px;
+    background-color: white;
+}
+.lifescience-main-container .hidden-container{
+    display: none;
+}
+.lifescience-main-container .hidden-container .information-container{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    column-gap: 5%;
+}
+
+.lifescience-main-container .hidden-container .information-container .bg-light-blue{
+    background-color: #DEE7FF;
+    border-radius: var(--std-radius);
+    padding: 20px;
+}
+.lifescience-main-container .hidden-container .information-container .img-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.lifescience-main-container .hidden-container .information-container .img-container:nth-child(1){
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.lifescience-main-container .hidden-container .information-container .img-container:nth-child(1) .abs-img{
+    position: absolute;
+    height: 120%;
+    width: 95%;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 8px;
+}
+.lifescience-main-container .hidden-container .information-container .img-container:nth-child(1) .abs-img .img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.lifescience-main-container .hidden-container .information-container .text-sm{
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+}
+
+/* ************** */
+/* Marketing styles */
+/* ************** */
+
+.marketing-banner-inner{
+    border-radius: var(--std-radius);
+    background-image: url(../images/lifescience/marketing.webp);
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+.marketing-banner-inner::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0px);
+}
+.marketing-banner-inner *{
+position: relative;
+z-index:2;
+}
+
+.marketing-service-item{
+    width: 17vw;
+    height: auto;
+    margin: 0 10px;
+}
+
+.marketing-service-item .img-container{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.marketing-service-item .img-container .img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--theme-color-blue);
+    border-radius: 30px;
+}
+.marketing-service-item .img-container .arrow-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid white;
+    color: var(--theme-color-blue);
+    background-color: #D9D9D9;
+    rotate: 130deg;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.marketing-service-item .img-container .arrow-btn::after{
+    content: '';
+}
+.marketing-service-item .sub-title{
+    font-weight: 600;
+}
+
+.marketing-main-section .bg-light-blue{
+    background-color: #082E951C;
+    border-radius: 20px 0 0 0;
+}
+
+.marketing-main-section .blue-line-sm{
+    width: 50px;
+    height: 1px;
+    background-color: var(--theme-color-blue);
+    margin-top: 10px;
+}
+
+.marketing-main-section .img-container{
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+}
+.marketing-main-section .img-container .img{
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: 1px solid var(--theme-color-blue);
+    border-radius: 20px;
+}
+.marketing-main-section .title-blue-md{
+    font-size: 23px;
+    text-transform: capitalize;
+    font-weight: 600;
+
+}
+.marketing-main-section .text-sm{
+    font-size: 13px;
+    padding: 20px 10px;
+}
