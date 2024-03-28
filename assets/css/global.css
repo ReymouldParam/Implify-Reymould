@@ -34,6 +34,10 @@ body{
     background-color: var(--theme-color-blue);
 }
 
+.bg-light-gray{
+    background-color: #D9D9D9;
+}
+
 .std-radius{
     border-radius: var(--std-radius);
 }
@@ -46,6 +50,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.filled-blue-btn{
+    background-color: var(--theme-color-blue);
+    border: 1px solid var(--theme-color-blue);
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #fff;
 }
 
 .unfilled-blue-btn{
@@ -92,9 +105,19 @@ body{
 .text-xxl{
     font-size: 70px;
 }
+.text-xs{
+    font-size: 14px;
+}
+.text-xxs{
+    font-size: 12px;
+}
 
 .inria-font{
     font-family: "Inria Serif", serif;;
+}
+
+.hidden{
+    display: none;
 }
 
 .grid-col-3{
