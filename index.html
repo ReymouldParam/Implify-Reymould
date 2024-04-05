@@ -79,6 +79,50 @@
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
+            <div class="nav-toggle-btn-container">
+                <button class="toggle-btn" onclick="toggleMobileNav()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="toggle-nav-list">
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </div>
+                <div class="nav-item position-relative">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <button class="btn py-0 px-1 mobile-dropdown-btn" onclick="toggleMobileNavDropdown()"><i class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropdown">
+                        <div class="dropdown-val">
+                            <a href="development.html">App Development</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="modernization.html">App Modernization</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="consulting.html">Consulting Services</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="lifescience.html">Life Science Validation</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="talentsourcing.html">Talent Sourcing</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="marketing.html">Marketing</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="casestudy.html" class="nav-link">Case Study</a>
+                </div>
+                <div class="nav-item">
+                    <a href="career.html" class="nav-link">Career</a>
+                </div>
+                <div class="nav-item">
+                    <a href="clients.html" class="nav-link">Clients</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -121,11 +165,11 @@
         <!-- End Marquee Section -->
 
         <div class="aboutus-inner padding-x d-flex scrollAnimation" style="transform:translateY(100%); opacity: 0; transition: all 0.3s linear;">
-            <div class="w-50 scrollAnimation" style="transform: translateX(-100%) translateY(100%); opacity: 0; transition: all 0.5s 0.2s ease-out;">
+            <div class="w-50 w-sm-100 scrollAnimation aboutus-content" style="transform: translateX(-100%) translateY(100%); opacity: 0; transition: all 0.5s 0.2s ease-out;">
                 <div>
                     <h1 class="title-blue">Who are we</h1>
                 </div>
-                <div class="my-4">
+                <div class="my-md-4 my-2">
                     <button class="unfilled-blue-btn">Explore More <i class="bi bi-arrow-up-right"></i></button>
                 </div>
     
@@ -133,7 +177,7 @@
                     <p class="text">We know that success in today’s digital landscape requires agility and innovation. Our curated solutions and expert advice help out clients drive scalable results and stay at the top of their game. Let us help you thrive in the new economy! We know that success in today’s digital landscape requires agility and innovation. Our curated solutions and expert advice help out clients drive scalable results and stay at the top of their game. Let us help you thrive in the new economy! We know that success in today’s digital landscape requires agility and innovation. Our curated solutions and expert advice help out clients drive scalable results and stay at the top of their game. Let us help you thrive in the new economy</p>
                 </div>
             </div>
-            <div class="w-50 center-item p-4 scrollAnimation" style="transform: translateX(100%) translateY(100%); opacity: 0; transition: all 0.5s 0.2s ease-out;">
+            <div class="w-50 w-sm-100 center-item p-4 scrollAnimation" style="transform: translateX(100%) translateY(100%); opacity: 0; transition: all 0.5s 0.2s ease-out;">
                 <img src="assets/images/home-about.webp" alt="" class="w-100">
             </div>
         </div>
@@ -228,7 +272,7 @@
     <!-- Services Section Start -->
     <section class="home-services bg-cover padding-x">
         <div class="services-inner">
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center mb-3">
                 <div>
                     <h1 class="title-blue mb-0">What We Do</h1>
                 </div>
@@ -238,11 +282,11 @@
             </div>
 
             <div class="row">
-                <div class="col-2">
+                <div class="col-2 display-sm-none">
 
                 </div>
 
-                <div class="col-10">
+                <div class="col-12 col-md-10">
                     <div class="services-carousel">
                         <div class="item">
                             <div>
@@ -308,7 +352,7 @@
 
     <!-- Case Study Section start -->
     <section class="home-case-study bg-cover padding-x">
-        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center mb-3">
             <div>
                 <h1 class="title-blue mb-0">Case study</h1>
             </div>
@@ -317,17 +361,17 @@
             </div>
         </div>
         <div>
-            <p class="text-light fw-light">At Implify Inc., we have extensive experience delivering innovative IT solutions to clients across industries. These case studies demonstrate the range of expertise and innovative solutions that Implify Inc can bring to its clients. Whether you want to upgrade your technology infrastructure, optimize your supply chain, or enhance security measures, we have the experience and skills to help your business succeed. Contact us today to learn more about our case studies and how we can help you achieve your goals.</p>
+            <p class="text-light fw-light text-mobile">At Implify Inc., we have extensive experience delivering innovative IT solutions to clients across industries. These case studies demonstrate the range of expertise and innovative solutions that Implify Inc can bring to its clients. Whether you want to upgrade your technology infrastructure, optimize your supply chain, or enhance security measures, we have the experience and skills to help your business succeed. Contact us today to learn more about our case studies and how we can help you achieve your goals.</p>
         </div>
 
-        <div class="grid-col-3">
+        <div class="grid-col-3 grid-col-sm-1">
             <div class="case-card bg-cover" style="background-image: url(assets/images/case-study/1.webp);">
                 <div class="card-inner">
                     <div>
                         <h3 class="title">RFID Implementation for a GPS Services Provider</h3>
                     </div>
                     <div>
-                        <p class="text-light">The client is a leading GPS Equipment provider to individual and corporate customers across the US.</p>
+                        <p class="text-light text-mobile">The client is a leading GPS Equipment provider to individual and corporate customers across the US.</p>
                     </div>
                 </div>
             </div>
@@ -338,7 +382,7 @@
                         <h3 class="title">RFID Implementation for a GPS Services Provider</h3>
                     </div>
                     <div>
-                        <p class="text-light">The client is a leading GPS Equipment provider to individual and corporate customers across the US.</p>
+                        <p class="text-light text-mobile">The client is a leading GPS Equipment provider to individual and corporate customers across the US.</p>
                     </div>
                 </div>
             </div>
@@ -349,7 +393,7 @@
                         <h3 class="title">RFID Implementation for a GPS Services Provider</h3>
                     </div>
                     <div>
-                        <p class="text-light">The client is a leading GPS Equipment provider to individual and corporate customers across the US.</p>
+                        <p class="text-light text-mobile">The client is a leading GPS Equipment provider to individual and corporate customers across the US.</p>
                     </div>
                 </div>
             </div>
@@ -359,22 +403,22 @@
 
     <!-- Career section start -->
     <section class="home-career padding-x bg-cover">
-        <div class="d-flex justify-content-between h-100">
-            <div class="col-4 py-4">
+        <div class="d-flex justify-content-between flex-column flex-md-row h-100">
+            <div class="col-12 col-md-4 py-4 pb-2 pb-md-4">
                 <div class="h-100 pe-2">
                     <div>
                         <h1 class="title-blue">Career</h1>
                     </div>
                     <div>
-                        <p class="text">Implify is always on the lookout for top talent to join our team. As a rapidly growing company, we offer exciting career opportunities in a dynamic and innovative work environment. The work ethos at Implify deeply values the diverse cultural backgrounds of our past, present and future employees. Our team comprises experts from various fields, including software development, cybersecurity, data analytics, project management, life sciences, etc.</p>
-                        <p class="text">Our team comprises experts from various fields, including software development,  </p>
+                        <p class="text text-mobile">Implify is always on the lookout for top talent to join our team. As a rapidly growing company, we offer exciting career opportunities in a dynamic and innovative work environment. The work ethos at Implify deeply values the diverse cultural backgrounds of our past, present and future employees. Our team comprises experts from various fields, including software development, cybersecurity, data analytics, project management, life sciences, etc.</p>
+                        <p class="text text-mobile">Our team comprises experts from various fields, including software development,  </p>
                         <div class="my-4">
                             <button class="unfilled-blue-btn">Explore More <i class="bi bi-arrow-up-right"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-12 col-md-8 career-images">
                 <div class="w-100 h-100 d-flex career-img-container overflow-hidden">
                     <div class="img-container bg-cover scrollAnimation">
                     </div>
@@ -391,7 +435,7 @@
     <!-- Clients section start -->
     <section class="home-client padding-x bg-cover">
         <div class="py-4">
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-between flex-column flex-md-row align-items-start align-items-md-center mb-3">
                 <div>
                     <h1 class="title-blue text-light mb-0">Our Clients</h1>
                 </div>
@@ -400,25 +444,25 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between flex-wrap">
                 <div class="client-item center-item">
-                    <h1>Hello</h1>
+                    <h1></h1>
                     <div class="rotating-bg"></div>
                 </div>
                 <div class="client-item center-item">
-                    <h1>Hello</h1>
+                    <h1></h1>
                     <div class="rotating-bg"></div>
                 </div>
                 <div class="client-item center-item">
-                    <h1>Hello</h1>
+                    <h1></h1>
                     <div class="rotating-bg"></div>
                 </div>
                 <div class="client-item center-item">
-                    <h1>Hello</h1>
+                    <h1></h1>
                     <div class="rotating-bg"></div>
                 </div>
-                <div class="client-item center-item">
-                    <h1>Hello</h1>
+                <div class="client-item center-item display-sm-none">
+                    <h1></h1>
                     <div class="rotating-bg"></div>
                 </div>
                 
@@ -568,11 +612,11 @@
                 {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 1
                 }
                 },
                 {
-                breakpoint: 480,
+                breakpoint: 550,
                 settings: {
                     slidesToShow: 1
                 }

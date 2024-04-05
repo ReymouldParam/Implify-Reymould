@@ -182,6 +182,53 @@ body{
 .navbar .logo-container .logo{
     height: 100%;
 }
+.navbar .nav-toggle-btn-container{
+    display: none;
+}
+.navbar .nav-toggle-btn-container .toggle-btn{
+    padding: 3px 7px;
+    background-color: transparent;
+    font-weight: 600;
+    color: var(--theme-color-blue);
+    border-radius: 5px;
+    border: 2px solid var(--theme-color-blue);
+}
+
+.navbar .toggle-nav-list{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.navbar .toggle-nav-list .nav-link{
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.navbar .toggle-nav-list .dropdown{
+    width: 100%;
+    display: none;
+}
+.navbar .toggle-nav-list .mobile-dropdown-btn{
+    position: absolute;
+    right: 0;
+    top: 8px;
+}
+.navbar .toggle-nav-list .dropdown .dropdown-val{
+    border-bottom: 1px solid rgb(176, 176, 176);
+    background-color: rgb(243, 243, 243);
+    padding: 5px 0;
+}
+.navbar .toggle-nav-list .dropdown .dropdown-val a{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
 
 .nav-dropdown{
     position: relative;
@@ -271,4 +318,78 @@ body{
     font-size: 15px;
     background-color: transparent;
     margin-right: 7px;
+}
+
+/* Mobile Responsive media queries */
+@media screen and (max-width: 550px) {
+    :root{
+        --header-height : 50px;
+        --std-padding: 15px;
+        --std-radius: 10px;
+    }
+
+    .navbar{
+        border-radius: 5px;
+        padding: 0.5rem ;
+    }
+
+    .nav-list-container{
+        display: none;
+    }
+    .navbar .nav-toggle-btn-container{
+        display: block;
+    }
+
+    .main-header{
+        top: 10px;
+    }
+
+    .unfilled-white-btn {
+        padding: 2px 11px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+        transform: translateY(10px);
+    }
+    .unfilled-blue-btn {
+        padding: 2px 11px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 5px;
+    }
+
+    .w-sm-100{
+        width: 100% !important;
+    }
+    .display-sm-none{
+        display: none;
+    }
+
+    .title-blue{
+        font-size: 30px;
+    }
+    .title-blue-md{
+        font-size: 23px;
+    }
+
+    .text-xxl{
+        font-size: 3rem;
+    }
+
+    
+
+    .text-mobile{
+        font-size: 13px;
+    }
+
+    .grid-col-sm-1 {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2%;
+        row-gap: 10px;
+    }
+
+    .page-footer-main{
+        display: none;
+    }
 }

@@ -41,3 +41,13 @@ const observeSlideUp3 = new IntersectionObserver((entries) => {
 
 const slideUpSections3 = document.querySelectorAll(".widthAnimation");
 slideUpSections3.forEach((ele) => observeSlideUp3.observe(ele));
+
+// Mobile nav toggle
+
+function toggleMobileNav(){
+  $('.navbar .toggle-nav-list').slideToggle('fast');
+}
+
+function toggleMobileNavDropdown(){
+  $('.navbar .toggle-nav-list .dropdown').slideToggle('fast');
+}
