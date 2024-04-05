@@ -37,6 +37,9 @@ body{
 .bg-light-gray{
     background-color: #D9D9D9;
 }
+.bg-dark-gray{
+    background-color: #434343;
+}
 
 .std-radius{
     border-radius: var(--std-radius);
