@@ -91,3 +91,18 @@
     transition: all 0.5s ease-out;
     opacity: 0;
 }
+
+/* Mobile media queries */
+@media screen and (max-width:550px) {
+    .lg-title-light{
+        font-size: 1.5rem;
+    }
+
+    .study-section-1 .inner-container .img-container{
+        height: 35vh;
+    }
+
+    .mobile-img-container{
+        height: 200px !important;
+    }
+}
