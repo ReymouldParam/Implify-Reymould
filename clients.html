@@ -129,12 +129,12 @@
     <!-- Banner section start -->
     <section class="clients-banner padding-x">
         <div class="clients-banner-inner center-item bg-cover">
-            <div class="w-75">
+            <div class="w-75 w-sm-100 p-1 p-md-0">
                 <div>
                     <h1 class="text-center text-xxl text-light">Our Clients</h1>
                 </div>
                 <div>
-                    <p class="text-light text-center">At Implify Inc., we have extensive experience delivering innovative IT solutions to clients across industries. These case studies demonstrate the range of expertise and innovative solutions that Implify Inc can bring to its clients. Whether you want to upgrade </p>
+                    <p class="text-light text-center text">At Implify Inc., we have extensive experience delivering innovative IT solutions to clients across industries. These case studies demonstrate the range of expertise and innovative solutions that Implify Inc can bring to its clients. Whether you want to upgrade </p>
                 </div>
             </div>
         </div>
@@ -169,7 +169,7 @@
     <!-- Testimonial carousel start -->
     <section class="padding-x py-3 testimonials-section bg-cover">
         <div>
-            <div>
+            <div class="w-75">
                 <h1 class="title-blue text-light">Listen to our clients</h1>
             </div>
             <div>
@@ -356,9 +356,17 @@
             dots:false,
             arrows: false,
             variableWidth: true,
-            asNavFor: '.testimonials-carousel'
+            asNavFor: '.testimonials-carousel',
             // nextArrow:'<button class="nextBtn slick-btn"><i class="fa-solid fa-arrow-right"></i></i></button>',
             // prevArrow:'<button class="prevBtn slick-btn"><i class="fa-solid fa-arrow-left"></i></i></button>',
+            responsive :[
+                {
+                    breakpoint: 550,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
             
         });
     </script>
@@ -376,7 +384,14 @@
             asNavFor: '.client-img-carousel',
             nextArrow:'<button class="nextBtn slick-btn"><i class="fa-solid fa-arrow-right"></i></i></button>',
             prevArrow:'<button class="prevBtn slick-btn"><i class="fa-solid fa-arrow-left"></i></i></button>',
-            
+            responsive :[
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
         });
     </script>
     

@@ -193,3 +193,63 @@ z-index:2;
     font-size: 13px;
     padding: 20px 10px;
 }
+
+/* Mobile media queries */
+
+@media screen and (max-width:550px) {
+    .lifescience-banner{
+        height: var(--mobile-banner-height);
+    }
+    .lifescience-banner .text{
+        font-size: 13px;
+    }
+
+    .lifescience-main-container .visible-container{
+        padding: 10px;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+    .lifescience-main-container .visible-container .unfilled-blue-btn{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    .lifescience-main-container .visible-container .title-blue-md{
+        font-size: 14px;
+        width: auto;
+    }
+    .lifescience-main-container .visible-container .icon{
+        height: 60px;
+    }
+    .lifescience-main-container .hidden-container .information-container{
+        grid-template-columns: auto;
+    }
+    .lifescience-main-container .hidden-container .information-container .img-container:nth-child(1) .abs-img{
+        height: 100%;
+        width: 100%;
+    }
+    .mobile-grid-col-1{
+        grid-template-columns: auto !important;
+    }
+    .mobile-img-container{
+        height: 200px !important;
+    }
+
+    /* Marketing styles */
+    .marketing-service-item{
+        width: 80vw;
+    }
+    .marketing-service-item .img-container{
+        height: 30vh;
+    }
+    .marketing-service-item .sub-title{
+        font-size: 18px;
+    }
+    .marketing-main-section .img-container .img{
+        height: 100%;
+    }
+    .marketing-main-section .text-sm{
+        padding: 0;
+    }
+}

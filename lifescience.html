@@ -131,9 +131,9 @@
     <!-- Banner section -->
     <section class="lifescience-banner padding-x">
         <div class="lifescience-banner-inner center-item bg-cover">
-            <div class="px-5 text-center">
+            <div class="px-1 text-center">
                 <h1 class="text-xxl text-light">Life Science Validation</h1>
-                <p class="text-light">Stay ahead of the curve with our life sciences validation services. Our team is knowledgeable and experienced in the latest regulatory requirements, ensuring
+                <p class="text-light text">Stay ahead of the curve with our life sciences validation services. Our team is knowledgeable and experienced in the latest regulatory requirements, ensuring
                     your products are compliant and ready to hit the market.</p>
             </div>
         </div>
@@ -164,8 +164,8 @@
             </div>
             <div class="hidden-container my-1">
                 <div class="bg-theme-blue padding-x py-3">
-                    <div class="w-50">
-                        <h4 class="text-light fw-bold w-75">Commissioning, Qualification,
+                    <div class="w-50 w-sm-100">
+                        <h4 class="text-light fw-bold w-75 w-sm-100">Commissioning, Qualification,
                             and Validation</h4>
                         <div class="white-line-sm"></div>
                     </div>
@@ -238,15 +238,15 @@
             </div>
             <div class="hidden-container my-1">
                 <div class="bg-theme-blue padding-x py-3 d-flex justify-content-end">
-                    <div class="w-50">
-                        <h4 class="text-light fw-bold w-75">Computerized System
+                    <div class="w-50 w-sm-100">
+                        <h4 class="text-light fw-bold w-75 w-sm-100">Computerized System
                             Validation</h4>
                         <div class="white-line-sm"></div>
                     </div>
                 </div>
-                <div class="padding-x py-3 information-container" style="grid-template-columns: 45% 50%;">
+                <div class="padding-x py-3 information-container mobile-grid-col-1" style="grid-template-columns: 45% 50%;">
                     <div>
-                        <div class="img-container" style="height: 100%;">
+                        <div class="img-container mobile-img-container" style="height: 100%;">
                             <div class="abs-img">
                                 <div class="img bg-cover" style="background-image: url(assets/images/lifescience/image2.webp);"></div>
                             </div>
@@ -286,8 +286,8 @@
             </div>
             <div class="hidden-container my-1">
                 <div class="bg-theme-blue padding-x py-3 ">
-                    <div class="w-50">
-                        <h4 class="text-light fw-bold w-75">Laboratory Equipment
+                    <div class="w-50 w-sm-100">
+                        <h4 class="text-light fw-bold w-75 w-sm-100">Laboratory Equipment
                             Software Validation</h4>
                         <div class="white-line-sm"></div>
                     </div>
@@ -308,7 +308,7 @@
                     </div>
 
                     <div>
-                        <div class="img-container" style="height: 100%;">
+                        <div class="img-container mobile-img-container" style="height: 100%;">
                             <div class="abs-img">
                                 <div class="img bg-cover" style="background-image: url(assets/images/lifescience/image1.webp);"></div>
                             </div>
@@ -334,16 +334,16 @@
             </div>
             <div class="hidden-container my-1">
                 <div class="bg-theme-blue padding-x py-3 d-flex justify-content-end">
-                    <div class="w-50">
-                        <h4 class="text-light fw-bold">Calibration Management
+                    <div class="w-50 w-sm-100">
+                        <h4 class="text-light fw-bold w-sm-100">Calibration Management
                             Software Implementation &
                             Validation</h4>
                         <div class="white-line-sm"></div>
                     </div>
                 </div>
-                <div class="padding-x py-3 information-container" style="grid-template-columns: 45% 50%;">
+                <div class="padding-x py-3 information-container mobile-grid-col-1" style="grid-template-columns: 45% 50%;">
                     <div>
-                        <div class="img-container" style="height: 100%;">
+                        <div class="img-container mobile-img-container" style="height: 100%;">
                             <div class="abs-img">
                                 <div class="img bg-cover" style="background-image: url(assets/images/lifescience/image2.webp);"></div>
                             </div>
@@ -509,21 +509,34 @@
     <!-- Toggle visiblity of hidden life science services -->
     <script>
         $(document).ready(function(){
-            $(".lifescience-main-container .visible-container .show-more-btn").click(function(){
-                // Define 'button' to refer to the clicked button within the callback
-                var button = $(this);
-                
-                // Find the nearest '.hidden-container' to toggle
-                var container = $(this).closest(".item-main-container").find(".hidden-container");
-                
-                // Toggle visibility with slide effect and use callback to update the button text
-                container.slideToggle('slow', function() {
-                    // Use the visibility of the container after animation to set button text
-                    var buttonText = container.is(":visible") ? "Show Less" : "Show More";
-                    button.text(buttonText);
+    $(".lifescience-main-container .visible-container .show-more-btn").click(function(){
+        // Reference to the clicked button
+        var button = $(this);
+        
+        // Find the nearest '.hidden-container' related to the clicked button
+        var container = button.closest(".item-main-container").find(".hidden-container");
+        
+        // Hide all other '.hidden-container's and reset their buttons' text to "Show More",
+        // except for the current container
+        $(".lifescience-main-container .item-main-container").each(function() {
+            var otherContainer = $(this).find(".hidden-container");
+            if (!otherContainer.is(container)) {
+                otherContainer.slideUp('slow', function() {
+                    // After animation, update the button text of all other buttons
+                    $(this).closest(".item-main-container").find(".show-more-btn").text("Show More");
                 });
-            });
+            }
         });
+        
+        // Toggle visibility of the related container with a slide effect
+        container.slideToggle('slow', function() {
+            // Use the visibility of the container after animation to set the button text
+            var buttonText = container.is(":visible") ? "Show Less" : "Show More";
+            button.text(buttonText);
+        });
+    });
+});
+
     </script>
     
     
