@@ -31,7 +31,15 @@
     <!-- Page header -->
     <header class="main-header">
         <div class="navbar">
+            <div class="logo-container" style="padding-left: 24px;">
+                <a href="." class="h-100">
+                    <img src="assets/images/header-logo.webp" alt="" class="logo">
+                </a> 
+            </div>
             <div class="nav-list-container">
+                <div class="nav-item">
+                    <a href="index.html">Home</a>
+                </div>
                 <div class="nav-item">
                     <a href="about.html">About</a>
                 </div>
@@ -39,16 +47,16 @@
                     <a href="services.html">Services</a>
                     <div class="dropdown">
                         <div class="item">
-                            <a href="development.html">App Development</a>
+                            <a href="development.html">Product Development</a>
                         </div>
                         <div class="item">
                             <a href="modernization.html">App Modernization</a>
                         </div>
                         <div class="item">
-                            <a href="consulting.html">Consulting Services</a>
+                            <a href="consulting.html">IT Consulting Services</a>
                         </div>
                         <div class="item">
-                            <a href="lifescience.html">Life Science Validation</a>
+                            <a href="lifescience.html">Healthcare & Life Science Validation</a>
                         </div>
                         <div class="item">
                             <a href="talentsourcing.html">Talent Sourcing</a>
@@ -61,19 +69,11 @@
                 <div class="nav-item">
                     <a href="casestudy.html">Case Study</a>
                 </div>
-            </div>
-            <div class="logo-container">
-                <a href="." class="h-100">
-                    <img src="assets/images/header-logo.webp" alt="" class="logo">
-                </a>
-                
-            </div>
-            <div class="nav-list-container">
                 <div class="nav-item">
                     <a href="career.html">Career</a>
                 </div>
                 <div class="nav-item">
-                    <a href="clients.html">Clients</a>
+                    <a href="clients.html"><li class="active" >Clients</li></a>
                 </div>
                 <div class="nav-item">
                     <a href="contact.html">Contact</a>
@@ -90,29 +90,29 @@
                     <a href="services.html" class="nav-link">Services</a>
                     <button class="btn py-0 px-1 mobile-dropdown-btn" onclick="toggleMobileNavDropdown()"><i class="fa-solid fa-chevron-down"></i></button>
                     <div class="dropdown">
-                        <div class="dropdown-val">
-                            <a href="development.html">App Development</a>
+                        <div class="item">
+                            <a href="development.html">Product Development</a>
                         </div>
-                        <div class="dropdown-val">
+                        <div class="item">
                             <a href="modernization.html">App Modernization</a>
                         </div>
-                        <div class="dropdown-val">
-                            <a href="consulting.html">Consulting Services</a>
+                        <div class="item">
+                            <a href="consulting.html">IT Consulting Services</a>
                         </div>
-                        <div class="dropdown-val">
-                            <a href="lifescience.html">Life Science Validation</a>
+                        <div class="item">
+                            <a href="lifescience.html">Healthcare & Life Sciences</a>
                         </div>
-                        <div class="dropdown-val">
+                        <div class="item">
                             <a href="talentsourcing.html">Talent Sourcing</a>
                         </div>
-                        <div class="dropdown-val">
+                        <!-- <div class="item">
                             <a href="marketing.html">Marketing</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="nav-item">
+                <!-- <div class="nav-item">
                     <a href="casestudy.html" class="nav-link">Case Study</a>
-                </div>
+                </div> -->
                 <div class="nav-item">
                     <a href="career.html" class="nav-link">Career</a>
                 </div>
@@ -141,7 +141,7 @@
     </section>
     <!-- Banner section end -->
 
-    <section class="padding-x bg-dark-gray py-2">
+    <!-- <section class="padding-x bg-dark-gray py-2">
         <div>
             <div class="client-img-carousel">
                 <div class="item">
@@ -164,54 +164,144 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Testimonial carousel start -->
     <section class="padding-x py-3 testimonials-section bg-cover">
-        <div>
-            <div class="w-75">
-                <h1 class="title-blue text-light">Listen to our clients</h1>
-            </div>
-            <div>
-                <div class="testimonials-carousel">
-                    <div class="item">
-                        <div class="">
-                            <h1 class="title">ProV</h1>
-                        </div>
-                        <div class="white-line"></div>
-                        <div>
-                            <p class="text-light">
-                                Use the positive review as a learning opportunity. Analyze what aspects of the service the client appreciated the most and consider how those elements can be consistently delivered to enhance overall customer experience. Incorporate snippets of the review into marketing materials such as brochures, email newsletters, and website testimonials. Authentic customer endorsements can significantly influence purchasing decisions.
-                            </p>
-                        </div>
-                    </div>
+        
+        <div style="display: flex; flex-wrap: wrap;" >
 
-                    <div class="item">
-                        <div class="">
-                            <h1 class="title">PRIMUS</h1>
-                        </div>
-                        <div class="white-line"></div>
-                        <div>
-                            <p class="text-light">
-                                2Use the positive review as a learning opportunity. Analyze what aspects of the service the client appreciated the most and consider how those elements can be consistently delivered to enhance overall customer experience. Incorporate snippets of the review into marketing materials such as brochures, email newsletters, and website testimonials. Authentic customer endorsements can significantly influence purchasing decisions.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="">
-                            <h1 class="title">ProV</h1>
-                        </div>
-                        <div class="white-line"></div>
-                        <div>
-                            <p class="text-light">
-                               3 Use the positive review as a learning opportunity. Analyze what aspects of the service the client appreciated the most and consider how those elements can be consistently delivered to enhance overall customer experience. Incorporate snippets of the review into marketing materials such as brochures, email newsletters, and website testimonials. Authentic customer endorsements can significantly influence purchasing decisions.
-                            </p>
-                        </div>
-                    </div>
+            <div class="client-item center-item" >
+                <div class="client-logo-container text-center our-cilents-logoss" > <img src="assets/images/NewChanges/vertex logo.png"
+                        class="clientcompany-logo" /> </div>
+                <div class="rotating-bg">
                 </div>
             </div>
+            <div class="client-item center-item">
+                <div class="client-logo-container text-center our-cilents-logoss" > <img
+                        src="assets/images/NewChanges/Gilead logo final.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+            <div class="client-item center-item">
+                <div class="client-logo-container text-center our-cilents-logoss" > <img
+                        src="assets/images/NewChanges/Beam logo final.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+            <div class="client-item center-item">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/CATALENT LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/GTECH LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+        
+
+       
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/J&J Logo final.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/LEGEND LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/lilly logo final.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/merck logo final.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/MINARIS LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+        
+       
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/MODERNA LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/MODIS LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/PCI LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/PFIZER LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/PREMIER LOGIC LOGO FINAL.png" class="clientcompany-logo" />
+                </div>
+                <div class="rotating-bg"></div>
+            </div>
+        
+
+        
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/Primus SC LOGO.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/REGENERON LOGO FINAL.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/proV logo final.png" class="clientcompany-logo" /> </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/WUXI BIOLOGICS LOGO FINAL.png" class="clientcompany-logo" />
+                </div>
+                <div class="rotating-bg"></div>
+            </div>
+
+            <div class="client-item center-item ">
+                <div class="client-logo-container text-center our-cilents-logoss"> <img
+                        src="assets/images/NewChanges/BMS LOGO FINAL.png" class="clientcompany-logo" />
+                </div>
+                <div class="rotating-bg"></div>
+            </div>
+
         </div>
+        
     </section>
 
     <!-- Footer start -->

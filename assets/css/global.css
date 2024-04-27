@@ -91,16 +91,38 @@ body{
     color: var(--theme-color-blue);
     font-size: 50px;
 }
+.sub-heading{
+    text-transform: uppercase;
+    color: var(--theme-color-blue);
+    font-size: 25px;
+}
+.care-heading{
+    color: var(--theme-color-blue);
+
+}
+.medical-insu{
+    padding-top:22px;
+}
+.colen-space{
+    margin-left:20px;
+}
 
 .title-blue-md{
     text-transform: uppercase;
     color: var(--theme-color-blue);
     font-size: 30px;
 }
+.core-value{
+    color: var(--theme-color-blue);
+    font-weight: bold;
+}
+
+
 
 .text-dark{
     color: #263238;
 }
+
 .text-light{
     letter-spacing: 1px;
 }
@@ -158,6 +180,14 @@ body{
 .nav-list-container{
     display: flex;
     padding: 0 20px;
+}
+
+
+
+.active{
+    color: #082E95;
+    list-style: none;
+   
 }
 
 .nav-list-container .nav-item{
@@ -380,6 +410,7 @@ body{
 
     .text-mobile{
         font-size: 13px;
+        
     }
 
     .grid-col-sm-1 {

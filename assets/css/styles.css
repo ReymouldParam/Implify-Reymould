@@ -6,6 +6,18 @@
     padding-bottom: 20px;
 }
 
+.client-logo-container{
+  width: 100%;
+  top: 12px;
+  left: 25px;
+
+}
+
+.our-cilents-logoss{
+  top: 0;
+  left: 0;
+}
+
 .home-banner .banner-inner{
     background-image: url(../images/banner-bg.webp);
     width: 100%;
@@ -490,6 +502,61 @@
   overflow: hidden;
 }
 
+.logo-carousel{
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.our-clients-logo-page{
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+
+
+.logo-carousel .slick-dots{
+  display: flex !important;
+  align-items: flex-start !important;
+  justify-content: center;
+  position: absolute;
+  color: white;
+}
+
+.logo-carousel .slick-dots li button:before{
+  color: white !important;
+}
+
+.logo-carousel .nextBtn, .logo-carousel .prevBtn{
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #9aa9d0;
+
+}
+
+.logo-carousel .prevBtn{
+  margin-right: 10px;
+}
+
+
+.logo-carousel .nextBtn{
+  margin-left: 10px;
+}
+
+
+
+
 .client-item .rotating-bg{
   height: 500px;
   width: 150px;
@@ -505,10 +572,15 @@
   z-index: -1;
 }
 
+.clientcompany-logo{
+  width: 80%;
+  
+}
+
 .client-item::after{
   content: '';
   position: absolute;
-  background-color: black;
+  background-color: white;
   inset: 5px;
 }
 
