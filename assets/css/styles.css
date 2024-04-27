@@ -532,6 +532,7 @@
   justify-content: center;
   position: absolute;
   color: white;
+  width: 50%;
 }
 
 .logo-carousel .slick-dots li button:before{
