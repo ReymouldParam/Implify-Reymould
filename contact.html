@@ -156,21 +156,21 @@
                             <h1 class="fs-1 title-dark fs-2">Get In Touch</h1>
                         </div>
                         <div class="contact-form-main">
-                            <form action="">
+                            <form action="contact-form.php" method="post">
                                 <div class="my-2">
-                                    <input type="text" class="input-field" placeholder="Full Name">
+                                    <input type="text" name="fullName" class="input-field" placeholder="Full Name">
                                 </div>
                                 <div class="my-2">
-                                    <input type="email" class="input-field" placeholder="Email Id">
+                                    <input type="email" name="email" class="input-field" placeholder="Email Id">
                                 </div>
                                 <div class="my-2">
-                                    <input type="tel" class="input-field" placeholder="Phone No">
+                                    <input type="tel" name="phone" class="input-field" placeholder="Phone No">
                                 </div>
                                 <div class="my-2">
-                                    <textarea type="text" class="input-field" placeholder="Leave us a message"></textarea>
+                                    <textarea type="text" name="message" class="input-field" placeholder="Leave us a message"></textarea>
                                 </div>
                                 <div>
-                                    <button class="submit-btn">Send <i class="bi bi-arrow-up-right"></i></button>
+                                    <button type="submit" class="submit-btn">Send <i class="bi bi-arrow-up-right"></i></button>
                                 </div>
                             </form>
                         </div>
