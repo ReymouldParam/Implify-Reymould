@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ncdrxgwyf63e/public_html/
+    - export DEPLOYPATH=/home/pk5ixxuh5zp9/public_html/implify.reymould.com
     - /bin/cp -R * $DEPLOYPATH
