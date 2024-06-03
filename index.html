@@ -865,8 +865,7 @@
     <script>
 
 
-
-
+$(window).on('load', function() {
         $('.logo-carousel').slick({
             slidesToShow: 5,
             dots: false,
@@ -881,19 +880,31 @@
                 {
                     breakpoint: 1250,
                     settings: {
-                        slidesToShow: 1
+                        slidesToShow: 4,
+                        slidesToScroll: 1
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 1
+                        slidesToShow: 1,
+                        slidesToScroll: 1
                     }
                 }
             ]
         });
 
-        $('.services-carousel').slick({
+        // Reinitialize slick if it fails to load
+        setTimeout(function(){
+            if (!$('.logo-carousel').hasClass('slick-initialized')) {
+                $('.logo-carousel').slick('setPosition');
+            }
+        }, 500);
+    });
+
+
+
+           $('.services-carousel').slick({
             slidesToShow: 3,
             dots: true,
             infinite: true,

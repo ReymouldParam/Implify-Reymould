@@ -558,6 +558,9 @@
 
 
 
+
+
+
 .client-item .rotating-bg{
   height: 500px;
   width: 150px;
@@ -576,6 +579,22 @@
 .clientcompany-logo{
   width: 80%;
   
+}
+
+@media screen  and (max-width:800px){
+  .clientcompany-logo{
+    width: 80%;
+    margin-left:-13px;
+    margin-top:-5px;
+  }
+  }
+
+  @media screen  and (max-width:1240px){
+    .clientcompany-logo{
+  margin-top: -5px;
+  width: 70%;
+  }
+
 }
 
 .client-item::after{
