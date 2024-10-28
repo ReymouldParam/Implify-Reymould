@@ -257,6 +257,7 @@ body {
 }
 
 
+
 .navbar .nav-toggle-btn-container {
     display: none;
 }
@@ -484,4 +485,33 @@ body {
     .page-footer-main {
         display: none;
     }
+}
+@media screen and (max-width:750px){
+    :root{
+        --header-height: 70px;   
+    }
+.logo-con{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap:2px;
+}
+
+.navbar .logo-container2 {
+    height:100%;
+}
+
+.navbar .logo-container2 .logo2 {
+    height: 13px;
+}
+.navbar .logo-container .logo{
+    height: 35px;
+}
+.certi{
+    margin-bottom: 0;
+    font-size: 8px;
+    font-weight: 400;
+    margin-left: -15px;
+}
+
 }
