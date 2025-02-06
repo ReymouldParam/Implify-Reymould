@@ -612,7 +612,7 @@ body {
         width: 100% !important;
         /* margin-bottom: 15px; */
         padding: 0 !important;
-        margin: 0 !important;
+        margin-top: -2%;
     }
 
     /* Keep social media icons horizontally aligned */
@@ -633,7 +633,8 @@ body {
         margin: 5px;
     }
 
-    i {
+    /* Hide arrow-right icons in footer */
+    .page-footer-main .bi-arrow-up-right {
         display: none;
     }
 
