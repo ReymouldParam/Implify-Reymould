@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Validate the email address
     $to = "info@implify.com";
-    $subject = "Enquirey from Implify Inc";
+    $subject = "Enquiry From Implify Inc Website (implifyinc.com)";
     $body = "Name: $name\nEmail: $email\nPhone: $phone\nMessage: $message \nCheckbox: $checkbox";
 
     // Attempt to send the email
