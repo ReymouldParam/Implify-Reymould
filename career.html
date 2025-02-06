@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Implify</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstarp Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Slick style css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Global custom styles -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    
+    <!-- Page Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/lifescience.css">
+</head>
+<body>
+
+    <!-- Page header -->
+    <header class="main-header">
+        <div class="navbar">
+            <div class="logo-container">
+                <div class="logo-container" style="padding-left: 24px;">
+                    <a href="." class="h-100">
+                        <img src="assets/images/header-logo.webp" alt="" class="logo">
+                    </a>
+                </div>
+                <div class="logo-container2" style="padding-left: 93px;">
+                    <div class="logo-con">
+                    <p class="certi
+                    ">Certified By</p> <img src="assets/images/text-certified.png" alt="certified by"
+                        class="logo2" />
+                    </div>
+                </div>
+            </div>
+            <div class="nav-list-container">
+                <div class="nav-item">
+                    <a href=".">
+                        <li class="active">Home</li>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a href="about">About</a>
+                </div>
+                <div class="nav-item nav-dropdown">
+                    <a href="services">Services</a>
+                    <div class="dropdown">
+                        <div class="item">
+                            <a href="development">Product Development</a>
+                        </div>
+                        <div class="item">
+                            <a href="modernization">App Modernization</a>
+                        </div>
+                        <div class="item">
+                            <a href="consulting">IT Consulting Services</a>
+                        </div>
+                        <div class="item">
+                            <a href="lifescience">Healthcare & Life Sciences</a>
+                        </div>
+                        <div class="item">
+                            <a href="talentsourcing">Talent Sourcing</a>
+                        </div>
+                        <div class="item">
+                            <a href="managedServices">Managed Services</a>
+                        </div>
+                        <div class="item">
+                            <a href="identityAccess">Identity & Access Management (IAM)</a>
+                        </div>
+                        <div class="item">
+                            <a href="customerIdentity">Customer Identity & Access Management (CIAM)</a>
+                        </div>
+
+                        <!-- <div class="item">
+                            <a href="marketing.html">Marketing</a>
+                        </div> -->
+                    </div>
+                </div>
+                <!-- <div class="nav-item">
+                    <a href="casestudy.html">Case Study</a>
+                </div> -->
+                <div class="nav-item">
+                    <a href="career">Career</a>
+                </div>
+                <div class="nav-item">
+                    <a href="clients">Clients</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact">Contact</a>
+                </div>
+            </div>
+            <div class="nav-toggle-btn-container">
+                <button class="toggle-btn" onclick="toggleMobileNav()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="toggle-nav-list">
+                <div class="nav-item">
+                    <a href="index" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="about" class="nav-link">About</a>
+                </div>
+                <div class="nav-item position-relative">
+                    <a href="services" class="nav-link">Services</a>
+                    <button class="btn py-0 px-1 mobile-dropdown-btn" onclick="toggleMobileNavDropdown()"><i
+                            class="fa-solid fa-chevron-down"></i></button>
+                    <div class="dropdown">
+                        <div class="dropdown-val">
+                            <a href="development">App Development</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="modernization">App Modernization</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="consulting">Consulting Services</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="lifescience">Life Science Validation</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="talentsourcing">Talent Sourcing</a>
+                        </div>
+                        <div class="dropdown-val">
+                            <a href="marketing">Marketing</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="nav-item">
+                    <a href="casestudy.html" class="nav-link">Case Study</a>
+                </div> -->
+                <div class="nav-item">
+                    <a href="career" class="nav-link">Career</a>
+                </div>
+                <div class="nav-item">
+                    <a href="clients" class="nav-link">Clients</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Banner section -->
+    <!-- Banner section end -->
+
+    <section class="padding-x" style="margin-top: calc(var(--header-height) + 20px);">
+        <div>
+            <div>
+                <h1 class="text-dark text-xxl text-center ">ABOUT WORKING HERE</h1>
+            </div>
+            <div class="d-flex justify-content-around my-4 flex-wrap">
+                <div class="col-12 col-md-4">
+                    <div class="mb-4">
+                        <h1 class="fs-3 care-heading">Conductive Environment</h1>
+                        <p class="text-xxs ">Our inclusive culture values diversity and encourages open communication, where every voice is heard and respected. We believe in work-life balance, offering flexible schedules and remote work options to ensure our team members thrive both personally and professionally. With a supportive leadership team, ongoing training, and development opportunities, we empower our employees to reach their full potential and achieve meaningful career growth.
+                         </p>
+                    </div>
+                    <div class="mb-4">
+                        <h1 class="fs-3 care-heading">Culture Of Learning </h1>
+                        <p class="text-xxs">We cultivate a culture of continuous learning and professional development. We believe that learning is a lifelong journey, and we provide our employees with the resources, tools, and opportunities to expand their knowledge and skills. Our learning environment encourages curiosity, experimentation, and exploration, where team members are empowered to take on new challenges and push the boundaries of what's possible.</p>
+                    </div>
+                    <div class="mb-0">
+                       <!-- <h1 class="fs-3 text-dark">Best Gadgets</h1>
+                        <p class="text-xxs">We are a global IT solutions and services firm. With our onshore, offshore, and near-shore service models, we have gained an excellent reputation as a proven resource in providing the best quality and cost-effective IT solutions to fortune 1000, mid-range and upcoming companies. </p>
+                       -->
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="mb-4">
+                        <h1 class="fs-3 care-heading">Shared Success</h1>
+                        <p class="text-xxs">As part of our team, you'll have the opportunity to work alongside talented individuals, contribute to impactful projects, and grow both personally and professionally. We celebrate achievements together, recognizing and rewarding hard work and dedication. Join us in shaping the future of IT solutions and services, where your success is our success.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h1 class="fs-3 care-heading medical-insu">Medical Insurance</h1>
+                        <p class="text-xxs">We prioritize your well-being by providing comprehensive medical insurance coverage. Our plans include medical, dental, and vision care, along with mental health support and wellness programs. We believe in supporting your overall health so you can thrive in both your personal and professional life.
+                         </p>
+                    </div>
+                    <div class="mb-0">
+                       <!-- <h1 class="fs-3 text-dark">Culture Of Learning</h1> 
+                        <p class="text-xxs">We are a global IT solutions and services firm. With our onshore, offshore, and near-shore service models, we have gained an excellent reputation as a proven resource in providing the best quality and cost-effective IT solutions to fortune 1000, mid-range and upcoming companies. </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="padding-x my-4 overflow-hidden">
+        <div class="w-100 career-img-row" style="height: 50vh; display: grid; grid-template-columns: 20% 20% 20% 20% 20%;">
+            <div class="h-100">
+                <div class="img w-100 h-100 bg-cover" style="background-image: url(assets/images/career/image1.webp);"></div>
+            </div>
+            <div class="h-100">
+                <div class="img w-100 h-100 bg-cover" style="background-image: url(assets/images/career/image2.webp);"></div>
+            </div>
+            <div class="h-100">
+                <div class="img w-100 h-100 bg-cover" style="background-image: url(assets/images/career/image3.webp);"></div>
+            </div>
+            <div class="h-100">
+                <div class="img w-100 h-100 bg-cover" style="background-image: url(assets/images/career/image4.webp);"></div>
+            </div>
+            <div class="h-100">
+                <div class="img w-100 h-100 bg-cover" style="background-image: url(assets/images/career/image5.webp);"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-theme-blue padding-x py-4">
+        <div>
+            <h1 class="text-light fs-2">Openings</h1>
+        </div>
+        <div class="jobs-main-container">
+            <!-- Job item start -->
+            <div class="job-item-main std-radius bg-light-gray p-3 p-md-4 py-md-2 mb-3">
+                <div class="d-flex justify-content-between align-items-center job-item">
+                    <div>
+                        <h1 class="fs-3 text-dark mb-0 title">Senior Validation Engineer (SVE2)</h1>
+                        <p class="mb-0 text-dark text-xxs">Minimum 5 Years Experience</p>
+                    </div>
+                    <div>
+                        <button class="more-details-btn btn fw-bold">More Details <i class="fa-solid fa-circle-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="py-1">
+                    <div class="w-75">
+                        <p class="text-xxs"><b>Role</b> Analyze validation test data to determine whether 
+                            systems or processes have met validation criteria and 
+                            to identify root causes of problems for various 
+                            pharma and other facilities.</p>
+                    </div>
+                </div>
+                <div class="hidden-container hidden">
+                    <hr>
+                    <div>
+                        <h5 class="text-dark">Job Description</h5>
+                        <ul class="text-xxs">
+                            Analyze validation test data to determine whether 
+                                systems or processes have met validation criteria and 
+                                to identify root causes of problems for various 
+                                pharma and other facilities. Prepare validation and 
+                                performance qualification protocols for new or 
+                                modified processes, systems, or equipment for various 
+                                production types. Coordinate the implementation or 
+                                scheduling of validation testing with affected 
+                                departments and personnel. Create, populate, and 
+                                maintain databases for tracking validation activities, 
+                                test results, and validate systems. Environment: 
+                                Sharepoint, MS Visio and MS Excel. 
+                        </ul>
+                        <h5 class="text-dark">Education</h5> 
+                        <ul class="text-xxs">
+                            Master’s Degree or its equivalent (Bachelor’s with 5 
+                            years’ experience in related occupation) in Computers 
+                            (or) Industrial (or) Instrumentation (or) Mechanical (or) 
+                            Manufacturing/Production (or) Engineering with any 
+                            equivalent major field of study.  
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="apply-btn filled-blue-btn">Apply</div>
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- Job item start -->
+            <div class="job-item-main std-radius bg-light-gray p-3 p-md-4 py-md-2 mb-3">
+                <div class="d-flex justify-content-between align-items-center job-item">
+                    <div>
+                        <h1 class="fs-3 text-dark mb-0 title">Senior Software Test Engineer</h1>
+                        <p class="mb-0 text-dark text-xxs">Minimum 5 Years Experience</p>
+                    </div>
+                    <div>
+                        <button class="more-details-btn btn fw-bold">More Details <i class="fa-solid fa-circle-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="py-1">
+                    <div class="w-75">
+                        <p class="text-xxs"><b>Role</b> Design Test Strategy with test approach, automation 
+                            tools.</p>
+                    </div>
+                </div>
+                <div class="hidden-container hidden">
+                    <hr>
+                    <div>
+                        <h5 class="text-dark">Job Description</h5>
+                        <ul class="text-xxs">
+                            Design Test Strategy with test approach, automation tools. Develop a Test Plan on the scope of the reference-based pricing system, evaluate services request/responses, and implement test activities as planned. Perform RESTFUL web service testing using Rest Assured and test both XML, JSON formats. Create the Functional Test Cases in JIRA. Determine data needs for Functional / Technical Test Cases. Build a Test Automation Framework using Java, Selenium WebDriver, Junit, TestNG, Maven and using either Eclipse or Command Prompt to run the Tests. Integrate the automation framework with CI tools to build a scheduled auto-deployment pipeline. Execute the functional Test Scripts. Participate in Scrum meetings such as daily standup, Sprint Planning, Grooming and Retrospective.
+                            </ul>
+                            <h5 class="text-dark">Education</h5>
+                            <ul class="text-xxs">
+                                 Master’s Degree or its equivalent (Bachelor’s with 5 
+                                years’ experience in related occupation) in Computers 
+                                (or) Electrical (or) Electronics (or) Communications (or) 
+                                Engineering with any equivalent major field of study.   
+                        </ul>
+                        
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="apply-btn filled-blue-btn">Apply</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job item start -->
+            <div class="job-item-main std-radius bg-light-gray p-3 p-md-4 py-md-2 mb-3">
+                <div class="d-flex justify-content-between align-items-center job-item">
+                    <div>
+                        <h1 class="fs-3 text-dark mb-0 title">Senior Validation Engineer(SVE1)</h1>
+                        <p class="mb-0 text-dark text-xxs">Minimum 5 Years Experience</p>
+                    </div>
+                    <div>
+                        <button class="more-details-btn btn fw-bold">More Details <i class="fa-solid fa-circle-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="py-1">
+                    <div class="w-75">
+                        <p class="text-xxs"><b>Role</b> Analyze validation test data to determine whether 
+                            systems or processes have met validation criteria and 
+                            to identify root causes of problems for various 
+                            pharma and other facilities.</p>
+                    </div>
+                </div>
+                <div class="hidden-container hidden">
+                    <hr>
+                    <div>
+                        <h5 class="text-dark">Job Description</h5>
+                        <ul class="text-xxs">
+                            Analyze validation test data to determine whether 
+                                systems or processes have met validation criteria and 
+                                to identify root causes of problems for various 
+                                pharma and other facilities. Prepare validation and 
+                                performance qualification protocols for new or 
+                                modified processes, systems, or equipment for various 
+                                production types. Coordinate the implementation or 
+                                scheduling of validation testing with affected 
+                                departments and personnel. Create, populate, and 
+                                maintain databases for tracking validation activities, 
+                                test results, and validate systems. Environment: 
+                                Sharepoint, MS Visio and MS Excel. 
+                        </ul>
+                        <h5 class="text-dark">Education</h5>
+                        <ul class="text-xxs">
+                             Master’s Degree or its equivalent (Bachelor’s with 5 
+                            years’ experience in related occupation) in Computer 
+                            Science (or) Information Technology (or) Information 
+                            Systems (or) Data Analytics (or) Data Sciences (or) 
+                            Healthcare Informatics (or) Engineering with any 
+                            equivalent major field of study. 
+                        </ul>
+                    
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="apply-btn filled-blue-btn">Apply</div>
+                    </div>
+                </div>
+            </div>
+            <!-- job item start -->
+            <div class="job-item-main std-radius bg-light-gray p-3 p-md-4 py-md-2 mb-3">
+                <div class="d-flex justify-content-between align-items-center job-item">
+                    <div>
+                        <h1 class="fs-3 text-dark mb-0 title">Validation Engineer(VE3)</h1>
+                        <p class="mb-0 text-dark text-xxs">Minimum 3 Years Experience</p>
+                    </div>
+                    <div>
+                        <button class="more-details-btn btn fw-bold">More Details <i class="fa-solid fa-circle-chevron-down"></i></button>
+                    </div>
+                </div>
+                <div class="py-1">
+                    <div class="w-75">
+                        <p class="text-xxs"><b>Role</b> Analyze validation test data to determine whether 
+                            systems or processes have met validation criteria and 
+                            to identify root causes of problems for various 
+                            pharma and other facilities.</p>
+                    </div>
+                </div>
+                <div class="hidden-container hidden">
+                    <hr>
+                    <div>
+                        <h5 class="text-dark">Job Description</h5>
+                        <ul class="text-xxs">
+                            Analyze validation test data to determine whether 
+                                systems or processes have met validation criteria and 
+                                to identify root causes of problems for various 
+                                pharma and other facilities. Prepare validation and 
+                                performance qualification protocols for new or 
+                                modified processes, systems, or equipment for various 
+                                production types. Coordinate the implementation or 
+                                scheduling of validation testing with affected 
+                                departments and personnel. Create, populate, and 
+                                maintain databases for tracking validation activities, 
+                                test results, and validate systems. Environment: 
+                                Sharepoint, MS Visio and MS Excel.
+                            </ul>
+                            <h5 class="text-dark">Education</h5>
+                            <ul class="text-xxs">
+                                Bachelor’s Degree in Computer Science (or) Regulatory 
+                                Affairs (or) Pharmaceutical Sciences (or) Pharmacy (or) 
+                                Chemistry (or) Biotechnology (or) Biology (or) 
+                                Biochemistry with any equivalent major field of study 
+                                in life sciences.    
+                            </ul>
+                            
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <div class="apply-btn filled-blue-btn">Apply</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer start -->
+    <footer class="page-footer-main">
+        <div class="padding-x pt-3">
+            <div class="text-center lg-content">
+                <h1 class="title">Are You Ready to make your</h1>
+                <h2 class="sub-title">future with us?</h2>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <div class="col-3">
+                    <h6 class="fw-bold text-dark fs-5 mb-0">Services</h6>
+                    <div class="d-flex">
+                        <div class="me-2 pt-1"><i class="bi bi-arrow-up-right"></i></div>
+                        <div class="fs-6">IT Services & Consulting</div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-2 pt-1"><i class="bi bi-arrow-up-right"></i></div>
+                        <div class="fs-6">Business Process and Operations</div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-2 pt-1"><i class="bi bi-arrow-up-right"></i></div>
+                        <div class="fs-6">Staffing</div>
+                    </div>
+
+                    <button class="unfilled-blue-btn p-1 px-2 text-xxs mt-1"><a style="text-decoration: none;color: #082e95;" href="services.html">Explore More </a><i
+                            class="bi bi-arrow-up-right"></i></button>
+                </div>
+
+                <div class="col-3">
+                    <h6 class="fw-bold text-dark fs-5 mb-0">Industries</h6>
+                    <div class="d-flex">
+                        <div class="me-2 pt-1"><i class="bi bi-arrow-up-right"></i></div>
+                        <div class="fs-6">Communications and Media</div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-2 pt-1"><i class="bi bi-arrow-up-right"></i></div>
+                        <div class="fs-6">Life Sciences</div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="me-2 pt-1"><i class="bi bi-arrow-up-right"></i></div>
+                        <div class="fs-6">Public Services</div>
+                    </div>
+
+                    <button class="unfilled-blue-btn p-1 px-2 text-xxs mt-1"><a style="text-decoration: none;color: #082e95;" href="lifescience.html">Explore More</a> <i
+                            class="bi bi-arrow-up-right"></i></button>
+                </div>
+                <div class="col-3">
+                    <div class="mb-3" style="color: var(--theme-color-blue);">
+                        <b>Subscribe To Us</b>
+                        <p>Don’t Miss Our Future Updates! Get Latest Updates Today!</p>
+                    </div>
+                    <div>
+                        <form class="footer-form" action="">
+                            <div class="form-field">
+                                <input type="text" placeholder="Enter Email Id">
+                                <button class="submit-btn"><i class="bi bi-arrow-up-right"></i></button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="padding-x py-3 pb-1 footer-2-main">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <img src="assets/images/header-logo.webp" alt="" class="logo">
+                </div>
+                <div class="d-flex w-25">
+                    <div class="icon py-2 me-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt h-100 fw-light"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                    </div>
+                    <div class="text-xxs">
+                        <p class="mb-0"><b>Corporate Office</b></p>
+                        <p class="mb-0">Implify Inc 260 Chapman Road, Suite 201 C Newark, DE 19702</p>
+                    </div>
+                </div>
+                <div class="d-flex w-25">
+                    <div class="icon py-2 me-2">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-telephone h-100"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>
+                    </div>
+                    <div class="text-xxs">
+                        <p class="mb-0"><b>Phone</b> (302) 533 2345</p>
+                        <p class="mb-0"><b>Fax</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (302) 319 5633</p>
+                        <p class="mb-0"><b>Email</b> &nbsp;info@implify.com</p>
+                    </div>
+                </div>
+           
+                <div class="text-xxs">
+                    <div class="d-flex justify-content-between">
+                        <a href="https://www.facebook.com/profile.php?id=61560696141057&is_tour_dismissed" target="_blank"><button class="sm-icon"><i class="fa-brands fa-facebook-f"></i></button></a>
+                        <a href="https://www.instagram.com/implifyinc/?hl=en" target="_blank"><button class="sm-icon"><i class="fa-brands fa-instagram"></i></button></a>
+                        <a href="https://www.linkedin.com/company/implifyconsulting/" target="_blank"><button class="sm-icon"><i class="fa-brands fa-linkedin-in"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: var(--theme-color-blue);" class="my-2 mb-1">
+            <div class="text-center text-xxs privacy-align">
+                <p class="mb-0">Implify &copy Copyrights. All rights reserved 2024.</p>
+                <p class="mb-0">
+                    <a href="terms-conditions.html"> Terms & Conditions</a> | <a href="privacy-policy.html">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+
+    
+
+    <!-- ******* -->
+    <!-- All Script tags -->
+    <!-- ******* -->
+
+
+    <!-- Bootstrap Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Jquery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Slick sript CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Custom Js Script files -->
+    <script src="assets/js/global.js"></script>
+
+    <!-- Toggle visiblity of hidden content of job -->
+    <script>
+        $(document).ready(function(){
+            $(".job-item-main .more-details-btn").click(function(){
+                // Define 'button' to refer to the clicked button within the callback
+                var button = $(this);
+                
+                // Find the nearest '.hidden-container' to toggle
+                var container = $(this).closest(".job-item-main").find(".hidden-container");
+                
+                // Toggle visibility with slide effect and use callback to update the button text
+                container.slideToggle('fast', function() {
+                    // Use the visibility of the container after animation to set button text
+                    var buttonText = container.is(":visible") ? "Less Details <i class='fa-solid fa-circle-chevron-up'></i>" : "More Details <i class='fa-solid fa-circle-chevron-down'></i>";
+                    button.html(buttonText);
+                });
+            });
+        });
+    </script>
+    
+    
+    
+</body>
+</html>

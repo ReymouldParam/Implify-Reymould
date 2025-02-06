@@ -1,0 +1,108 @@
+.case-banner .inner-container{
+    background-image: url(../images/case-study/case-banner.webp);
+}
+
+.case-banner .inner-container::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(12, 5, 5, 0.674);
+    width: 100%;
+    height: 100%;
+}
+
+.case-banner .inner-container .content .title{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.8s ease-out;
+  }
+
+.case-banner .inner-container .content .text{
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all 0.5s  ease-out;
+}
+
+.study-section-1{
+    background-color: var(--theme-color-blue);
+}
+
+.study-section-1 .inner-container{
+    background-color: #000;
+}
+.study-section .inner-container{
+    padding: var(--std-padding);
+    overflow: hidden;
+}
+
+.study-section-1 .inner-container .img-container {
+    width: 100%;
+    height: 50vh;
+    margin: 30px auto;
+}
+.study-section-1 .inner-container .img-container .img{
+    width: 0%;
+    height: 100%;
+    border-radius: 50px;
+    background-image: url(../images/case-study/4.webp);
+    transition: all 0.8s ease-out;
+}
+
+.study-section-1 .inner-container .lg-title-light{
+    transform: translateX(-100%);
+    transition: all 0.8s ease-out;
+    
+}
+
+.study-section .inner-container{
+    border-radius: 0 0 100px 100px;
+}
+
+.lg-title-light{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.md-title-blue{
+    color: var(--theme-color-blue);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+
+.study-section-1 .benifits .case-img-1{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(../images/case-study/5.webp);
+    transform: translateX(100%) translateY(-100%);
+    transition: all 0.5s ease-out;
+}
+
+.study-section-1 .benifits .content{
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+}
+.study-section-1 .benifits .content ul{
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+    opacity: 0;
+}
+
+/* Mobile media queries */
+@media screen and (max-width:550px) {
+    .lg-title-light{
+        font-size: 1.5rem;
+    }
+
+    .study-section-1 .inner-container .img-container{
+        height: 35vh;
+    }
+
+    .mobile-img-container{
+        height: 200px !important;
+    }
+}

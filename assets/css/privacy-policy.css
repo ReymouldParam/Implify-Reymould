@@ -1,0 +1,67 @@
+
+.global-privacy {
+    margin-top: 100px; /* Increased spacing below header */
+    padding-top: 20px; /* Additional space inside the section */
+}
+
+.privacy-heading {
+    color: #082E95;
+    text-align: center;
+    margin-bottom: 30px; /* Increased spacing below heading */
+}
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #082E95;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+a {
+    color: #082E95;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.custom-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.custom-list li i {
+    color: #082E95;  /* Matches your theme */
+    font-size: 16px;
+    margin-right: 10px;
+}
