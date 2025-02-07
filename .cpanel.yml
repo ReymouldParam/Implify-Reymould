@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ncdrxgwyf63e/public_html/dev.implifyinc.com
+    - export DEPLOYPATH=/home/ncdrxgwyf63e/public_html/implifyinc.com
     - /bin/cp -R * $DEPLOYPATH
